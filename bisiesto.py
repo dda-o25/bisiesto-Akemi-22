@@ -13,11 +13,11 @@ año = int(input("Ingrese un año: "))
 # Proceso
 if año % 100 == 0:
     if año % 400 == 0:
-        print(año, "es un año bisiesto")
+        print(año, "sí es un año bisiesto")
     else:
        print(año, "no es un año bisiesto")
 elif año % 4 == 0:
-    print(año, "es un año bisiesto")
+    print(año, "sí es un año bisiesto")
 else:
     print(año, "no es un año bisiesto")
 
