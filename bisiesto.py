@@ -11,12 +11,16 @@ Determinar si un año es bisiesto o no
 año = int(input("Ingrese un año: "))
 
 # Proceso
-if año % 4 == 0 and año % 100 != 0:
-     print(año, "es un año bisiesto")
-elif año % 4 == 0 and año % 100 == 0 and año % 400 == 0:
+if año % 100 == 0:
+    if año % 400 == 0:
+        print(año, "es un año bisiesto")
+    else:
+       print(año, "no es un año bisiesto")
+elif año % 4 == 0:
     print(año, "es un año bisiesto")
-elif año % 100 == 0:
+else:
     print(año, "no es un año bisiesto")
+
 
 
 # Salidas
